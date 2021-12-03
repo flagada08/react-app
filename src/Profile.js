@@ -1,6 +1,7 @@
 // import React from "react";
 import NavBar from './NavBar.js';
 import Footer from './Footer.js';
+import Logo from './Logo.js';
 import {useNavigate} from "react-router-dom";
 import {fetchToken} from './Auth.js';
 
@@ -59,7 +60,7 @@ export default function Profile() {
   const navigate = useNavigate();
   const signOut = () => {
 
-    localStorage.removeItem('rasyueToken')
+    localStorage.removeItem('azertyToken')
     navigate("/");
   }
 
@@ -68,6 +69,8 @@ export default function Profile() {
       <NavBar />
         <div style={{minHeight: 800, marginTop: 20}}>
           <h1>Profile Page</h1>
+          
+          <Logo />
 
           <p>Hi, {fetchToken()}. This is your profile</p>
 

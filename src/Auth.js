@@ -6,13 +6,13 @@ import {
 export const setToken = (token) => {
 
     // set token in localStorage
-    localStorage.setItem('rasyueToken', token)
+    localStorage.setItem('azertyToken', token)
 }
 
-export const fetchToken = (token) => {
+export const fetchToken = () => {
 
     // fetch the token
-    return localStorage.getItem('rasyueToken')
+    return localStorage.getItem('azertyToken')
 }
 
 export function RequireToken({children}) {
