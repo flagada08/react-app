@@ -8,7 +8,7 @@
 }
 
 .NavBar-logo {
-  height: 5vmin;
+  height: 5ch;
 }
 
 @media (prefers-reduced-motion: no-preference) {
