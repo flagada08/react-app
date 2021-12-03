@@ -23,7 +23,7 @@ export default function Home() {
 				
 				<Logo />
 
-					<div style={{marginTop: 50}}>
+					<div className="d-flex justify-content-center">
 						{
 							fetchToken()
 							?(
@@ -31,11 +31,15 @@ export default function Home() {
 							)
 							:(
 								<form>
-									<label style={{marginRight: 10}}>Input Username: </label>
+									<div style={{marginBottom: 15}}>
+									<label>Input Username: </label>
+									</div>
 									<input type='text'
 									onChange={(e) => setUsername(e.target.value)}
 									onKeyDown={(e) => e.key === 'Enter' ? login(username) : null} />
-									<button type='button' onClick={login}>Login</button>
+									<div>
+									<button style={{marginTop: 15}} type='button' onClick={login}>Login</button>
+									</div>
 								</form>
 							)
 						}
