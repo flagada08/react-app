@@ -8,9 +8,9 @@
 }
 
 .NavBar-logo {
-  height: 10ch;
-  margin-left: -10px;
-  margin-right: -10px;
+  height: 65px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
