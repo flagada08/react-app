@@ -8,7 +8,9 @@
 }
 
 .NavBar-logo {
-  height: 5ch;
+  height: 10ch;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,12 +21,12 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 1.5vmin);
   color: white;
 }
 

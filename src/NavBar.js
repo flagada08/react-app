@@ -5,28 +5,25 @@ import logo from "./logo.svg";
 export default function NavBar() {
 
     return (
-        <>
-            <Navbar bg="light" expand="lg">
-                <Container style={{margin: 0}}>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav.Item>
-                        <Link to="/"><img src={logo} className="NavBar-logo" alt="logo" /></Link>
-                    </Nav.Item>
-                    <Nav variant="tabs" defaultActiveKey="/">
-                        <Nav.Item>
-                            <NavLink className="nav-link" to="/">Home</NavLink>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <NavLink className="nav-link" to="/about">About</NavLink>
-                        </Nav.Item>
-                        <Nav.Item>                            
-                            <NavLink className="nav-link" to="/profile">Profile</NavLink>
-                        </Nav.Item>
-                    </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+        <>            
+            <Nav.Item>
+            <header className="App-header" style={{marginBottom: 20}}>
+                <h1 style={{fontSize:50}}>RE</h1>
+                    <Link to="/"><img src={logo} className="NavBar-logo" alt="logo" /></Link>
+                <h1 style={{fontSize:50}}>CT</h1>
+            </header>
+            </Nav.Item>
+            <Nav justify variant="tabs" defaultActiveKey="/">
+                <Nav.Item>
+                    <NavLink className="nav-link" to="/">Home</NavLink>
+                </Nav.Item>
+                <Nav.Item>
+                    <NavLink className="nav-link" to="/about">About</NavLink>
+                </Nav.Item>
+                <Nav.Item>                            
+                    <NavLink className="nav-link" to="/profile">Profile</NavLink>
+                </Nav.Item>
+            </Nav>
         </>
     )
 }
