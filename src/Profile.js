@@ -67,14 +67,14 @@ export default function Profile() {
 	return(
 		<>
 			<NavBar />
-				<div style={{minHeight: 800, marginTop: 20}}>
+				<div style={{height: 800, marginTop: 20}}>
 					<h1>Profile Page</h1>
 					
 					<Logo />
 
 					<p>Hi, {fetchToken()}. This is your profile</p>
 
-					<div>
+					<div style={{marginBottom: 20}}>
 						<button type='button' onClick={signOut}>Sign Out</button>
 					</div>
 				</div>

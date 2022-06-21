@@ -18,7 +18,7 @@ export default function Home() {
 	return (
 		<>
 			<NavBar />
-			<div style={{minHeight: 800, marginTop: 20}}>
+			<div style={{height: 800, marginTop: 20}}>
 				<h1>Home Page</h1>
 				
 				<Logo />

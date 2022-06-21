@@ -7,7 +7,7 @@ export default function About() {
 	return (
 		<>
 			<NavBar />
-				<div style={{minHeight: 800, marginTop: 20}}>
+				<div style={{height: 800, marginTop: 20}}>
 					<h1>About Page</h1>
 				<Logo />
 					<p className="mx-auto w-75 p-3">
