@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/react-app" element={<Home />} />
-        <Route path="/react-app/#/about" element={<About />} />
-        <Route path="/react-app/#/profile" element={
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/profile" element={
           <RequireToken>
             <Profile />
           </RequireToken>
