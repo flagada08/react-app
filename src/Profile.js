@@ -61,7 +61,7 @@ export default function Profile() {
 	const signOut = () => {
 
 		localStorage.removeItem('azertyToken')
-		navigate("/");
+		navigate("/react-app/");
 	}
 
 	return(

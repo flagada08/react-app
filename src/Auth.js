@@ -23,7 +23,7 @@ export function RequireToken({children}) {
     // if no token set in localStorage, redirect user
     if(!auth) {
         
-        return <Navigate to="/" state={{from: location}} />
+        return <Navigate to="/react-app/" state={{from: location}} />
     }
 
     // return all children route

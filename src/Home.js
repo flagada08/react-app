@@ -12,7 +12,7 @@ export default function Home() {
 	const login = () => {
 			
 		setToken(username)
-		navigate("/profile");
+		navigate("/react-app/profile");
 	}
 
 	return (
